@@ -1,0 +1,36 @@
+.chat-wrapper{
+  background-color: #746CAD;
+  color: #F9F1FA;
+  border-radius: 5px;
+}
+.chat-wrapper:hover {
+  border-radius: 5px;
+  background-color: #b82d5d;
+  transition: ease 0.8s;
+  cursor: pointer;
+}
+
+.chat-container p{
+  margin-bottom: 0;
+}
+
+.chat-container p.chat-username {
+  font-size: 1rem;
+}
+
+.chat-container p.chat-last-msg .last-msg {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+div.chat-wrapper .join-btn a{
+  color: #b82d5d;
+  background-color: #F9F1FA;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+div.chat-wrapper .join-btn a:hover{
+  text-decoration: none;
+}

@@ -1,0 +1,23 @@
+.tab-container:hover, 
+.tab-container.active {
+  background-color: #746CAD;
+  color: #F9F1FA;
+  cursor: pointer;
+  transition: ease 0.4s;
+}
+.tab-container span {
+  /* display: block; */
+}
+.tab-container a span.tab-name {
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+.tab-container a{
+  width: 100%;
+  height: 100%;
+  color: #F9F1FA;
+}
+.tab-container a:hover{
+  text-decoration: none;
+  color: #F9F1FA;
+}

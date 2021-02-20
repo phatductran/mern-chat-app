@@ -1,0 +1,37 @@
+.conversation-header {
+  background-color: #F33B7B;
+  color: #F9F1FA;
+}
+
+.conversation-header h3{
+  background-color: #746C;
+  font-size: 1rem;
+}
+.conversation-header h3 a.create-room-btn {
+  background-color: #b82d5d;
+  color: #F9F1FA;
+}
+.conversation-header h3 a.create-room-btn:hover {
+  background-color: #F9F1FA;
+  color: #F33B7B;
+  text-decoration: none;
+  transition: ease 0.5s;
+}
+.conversation-messages {
+  /* max-height: 100vh; */
+  /* overflow-y: scroll; */
+}
+.chat-inp {
+  width: 92%;
+}
+
+a.leave-btn {
+  background-color: #F9F1FA;
+  color: #966A78;
+  font-size: 0.8rem;
+}
+
+a.leave-btn:hover {
+  text-decoration: none;
+  color: #F33B7B;
+}

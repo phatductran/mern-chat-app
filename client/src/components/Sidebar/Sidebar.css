@@ -1,0 +1,25 @@
+.sidebar-wrapper {
+  height: 100vh;
+  background-color: #F33B7B;
+}
+aside.sidebar-wrapper .header{
+  background-color: #b82d5d;
+}
+
+aside.sidebar-wrapper .header h3{
+  color: #F9F1FA;
+}
+
+a.logout-btn {
+  background-color: #966A78;
+  font-size: 0.8rem;
+  color: #F9F1FA;
+}
+
+a.logout-btn:hover{
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #F33B7B;
+  color: #F9F1FA;
+  transition: ease 0.5s;
+}

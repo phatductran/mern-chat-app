@@ -1,0 +1,13 @@
+div.chats ul li {
+  /* border: 1px solid #746CAD; */
+  background-color: #746CAD;
+}
+ul li span:first-child{
+  color: #F9F1FA;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+.sidebar-chats {
+  max-height: 100vh;
+  overflow-y: scroll;
+}
