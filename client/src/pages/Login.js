@@ -16,8 +16,8 @@ import axios from "axios"
 import { useGlobalContext } from "../contexts/GlobalContext"
 
 export default function Login({ isLogged, setIsLogged,isLoading, setIsLoading}) {
-  const [username, setUsername] = useState("")
-  const [password, setPassword] = useState("")
+  const [username, setUsername] = useState("phatductran")
+  const [password, setPassword] = useState("1234")
   const [error, setError] = useState(null)
   const { baseURL, setUser } = useGlobalContext()
   const history = useHistory()

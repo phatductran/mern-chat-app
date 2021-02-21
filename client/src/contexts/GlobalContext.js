@@ -1,7 +1,7 @@
 import { createContext, useContext, useState} from "react"
 const GlobalContext = createContext()
 
-const baseURL = "http://localhost:5000"
+const baseURL = "https://ducphattran-chat-app.herokuapp.com"
 
 const getUserData = () => {
   const userInfo = localStorage.getItem("userInfo")

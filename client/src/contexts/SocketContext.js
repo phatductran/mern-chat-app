@@ -1,7 +1,7 @@
 import {createContext, useContext, useState} from 'react'
 import {io} from 'socket.io-client'
 
-const ENDPOINT = 'http://localhost:5000'
+const ENDPOINT = 'https://ducphattran-chat-app.herokuapp.com'
 
 const SocketContext = createContext()
 

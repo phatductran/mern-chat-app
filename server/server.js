@@ -1,3 +1,6 @@
+if (process.env.NODE_ENV === 'production') {
+  require('dotenv').config()
+}
 const express = require("express")
 const http = require("http")
 const socketIo = require("socket.io")
@@ -6,7 +9,7 @@ const mongoose = require("mongoose")
 const bodyParser = require('body-parser')
 const passport = require('passport')
 const passportLocal = require('./auth/passport-local.js')
-const passportJwt = require('./auth/passport-jwt.js')
+// const passportJwt = require('./auth/passport-jwt.js')
 
 const {createDefaultRooms} = require('./controllers/Room')
 
@@ -35,7 +38,7 @@ app.use("/api/v1", [loginRouter, signupRouter, chatRouter])
 require('./socket')(io)
 
 mongoose
-  .connect("mongodb://localhost/chat-app", {
+  .connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.bapzu.mongodb.net/chat-app?retryWrites=true&w=majority`, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
     useFindAndModify: false,
